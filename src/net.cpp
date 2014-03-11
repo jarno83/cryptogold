@@ -1061,7 +1061,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "Zeitcoin " + FormatFullVersion();
+        string strDesc = "cryptogold " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1149,15 +1149,8 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"zeitcoin", "54.213.220.242"},
-    {"Hashstrike", "zeit.hashstrike.com"},
-    {"Hash.so", "s3.hash.so"},
-    {"CryptoSiD", "173.209.34.66"},
-    {"crdevel.com","168.144.97.93"},
-    {"ec2-a","54.213.81.163"},
-    {"ec2-b","54.213.195.38"},
-    {"ec2-d","54.213.243.144"},
-    {"ec2-e","54.213.174.35"},
+    {"cryptogold", "88.196.13.22"},
+  
 };
 
 void ThreadDNSAddressSeed(void* parg)
@@ -1749,7 +1742,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Zeitcoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. cryptogold is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());

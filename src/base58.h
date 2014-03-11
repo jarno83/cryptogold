@@ -276,7 +276,7 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 51,  // Zeitcoin: address begin with 'M'
+        PUBKEY_ADDRESS = 97,  // CryptoGold Coin: address begin with 'G'
         SCRIPT_ADDRESS = 8, 
         PUBKEY_ADDRESS_TEST = 111,
         SCRIPT_ADDRESS_TEST = 196,

@@ -68,7 +68,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Zeitcoin Signed Message:\n";
+const string strMessageMagic = "CryptoGold Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -1512,8 +1512,8 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes in their
     // initial block download.
-    bool fEnforceBIP30 = true; // Always active in Zeitcoin
-    bool fStrictPayToScriptHash = true; // Always active in Zeitcoin
+    bool fEnforceBIP30 = true; // Always active in cryptogold
+    bool fStrictPayToScriptHash = true; // Always active in cryptogold
 
     //// issue here: it doesn't know the version
     unsigned int nTxPos;
@@ -2456,7 +2456,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "Zeitcoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "cryptogold", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }
@@ -2549,7 +2549,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "March 1st, 2014: Cold outside.";
+        const char* pszTimestamp = "March 29st, 2014:Sunny outside.";
         CTransaction txNew;
         txNew.nTime = nChainStartTime;
         txNew.vin.resize(1);
@@ -2562,9 +2562,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1393609396;
+        block.nTime    = 1394569456;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 763422;
+        block.nNonce   = 478533;
 
         //// debug print
         block.print();

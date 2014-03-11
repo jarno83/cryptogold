@@ -1,5 +1,6 @@
-Zeitcoin 0.4.0 BETA
+CryptoGold Coin 0.0.1 BETA
 
+Copyright (c) 2014 CryptoGold Coin Developers
 Copyright (c) 2013 Zeitcoin Developers
 Copyright (c) 2011-2013 PPCoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
@@ -11,7 +12,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-Zeitcoin is a free open source project derived from PPCoin, with
+CryptoGold Coin is a free open source project derived from PPCoin, with
 the goal of providing a long-term energy-efficient scrypt-based crypto-currency.
 Built on the foundation of Bitcoin, innovations such as proof-of-stake and scrypt
 help further advance the field of crypto-currency.
@@ -21,9 +22,9 @@ Setup
 -----
 After completing windows setup then run windows command line (cmd)
   cd daemon
-  Zeitcoind
-You would need to create a configuration file Zeitcoin.conf in the default
-wallet directory. Grant access to Zeitcoind.exe in anti-virus and firewall
+  cryptogoldd
+You would need to create a configuration file cryptogold.conf in the default
+wallet directory. Grant access to gryptogoldd.exe in anti-virus and firewall
 applications if necessary.
 
 The software automatically finds other nodes to connect to.  You can
@@ -36,11 +37,11 @@ but allowing incoming connections helps the PPCoin network.
 Upgrade
 -------
 All you existing coins/transactions should be intact with the upgrade.
-To upgrade from 0.2.x, first backup wallet
-Zeitcoind backupwallet <destination_backup_file>
+To upgrade from 0.0.x, first backup wallet
+cryptogoldd backupwallet <destination_backup_file>
 Then shutdown ppcoind by
-Zeitcoind stop
-Start up the new Zeitcoind (0.3.0).
+cryptogoldd stop
+Start up the new cryptogoldd (0.0.1).
 
 
 ------------------

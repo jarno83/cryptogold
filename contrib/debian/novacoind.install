@@ -1,2 +1,2 @@
-debian/bin/Zeitcoind usr/bin
-src/Zeitcoind usr/lib/Zeitcoin
+debian/bin/cryptogoldd usr/bin
+src/Zeitcoind usr/lib/cryptogold

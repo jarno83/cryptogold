@@ -2549,7 +2549,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "March 29st, 2014:Sunny outside.";
+        const char* pszTimestamp = "Apil 14st, 2014:Sunny outside.";
         CTransaction txNew;
         txNew.nTime = nChainStartTime;
         txNew.vin.resize(1);
@@ -2562,7 +2562,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1394569456;
+        block.nTime    = 1397412000;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = 478533;
 
